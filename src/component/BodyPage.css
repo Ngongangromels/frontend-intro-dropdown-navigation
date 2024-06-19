@@ -1,0 +1,61 @@
+.mainBloc {
+    display: flex;
+    align-items: center;
+    justify-content: space-around;
+    width: 100%;
+}
+
+.bloc1-page{
+    margin-top: 100px;
+    margin-left: 100px;
+}
+
+h1{
+    font-size: 100px;
+}
+
+p{
+    font-size: 25px;
+    color: hsl(0, 0%, 41%);
+    margin-top: 30px;
+}
+
+.btn-page{
+    border-radius: 16px;
+    background: hsl(0, 0%, 98%);
+    color: hsl(0, 0%, 8%);
+    font-size: 16px;
+    width: 150px;
+    height: 50px;
+    margin-top: 90px;  
+}
+
+.btn-page a {
+    text-decoration: none;
+    color: hsl(0, 0%, 8%);
+    font-weight: 900;
+}
+
+.logo-page {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    list-style-type: none;
+    margin-top: 90px;
+}
+
+.img-page{
+    margin-top: 100px;
+    margin-right: 300px;
+    margin-left: 100px;
+    width: 600px;
+    height: 600px;
+}
+
+@media screen and (max-width: 400px) {
+    .mainBloc{
+        display: flex;
+        flex-direction: column-reverse;
+    }
+}
+
