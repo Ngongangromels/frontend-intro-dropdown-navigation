@@ -3,7 +3,7 @@
     min-width: 375px;
     display: flex;
     align-items: center;
-    background: hsl(0, 0%, 98%);
+    background: hsl(0, 0%, 95%);
 }
 
 .nav-bar-mobile ul {
@@ -13,6 +13,11 @@
     justify-content: space-between;
     list-style-type: none;
 }
+
+a:hover{
+    color: hsl(0, 0%, 8%);
+    font-weight: bold;
+  }
 
 .nav-bar-mobile img {
     height: 25px;
@@ -33,7 +38,7 @@
     margin:  40px 200px;
     height: 100%;
     width: 365px;
-    background-color: hsl(0, 0%, 98%);
+    background-color: hsl(0, 0%, 95%);
 } 
 
 .links-items-mobile li {
@@ -63,8 +68,13 @@
     background-color: hsl(0, 0%, 98%);
 }
 
+button:hover{
+    color: hsl(0, 0%, 8%);
+    font-weight: bold;
+  }
+
 .sign-btn-mobile button:nth-child(1) {
     border: none;
-    background: hsl(0, 0%, 98%);
+    background: hsl(0, 0%, 95%);
   }
 

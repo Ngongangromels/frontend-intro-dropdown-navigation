@@ -4,7 +4,7 @@ nav {
     display: flex;
     align-items: center;
     padding: 15px 25px;
-    background: hsl(0, 0%, 98%);
+    background: hsl(0, 1%, 95%);
 }
 
 .logo-nav img {
@@ -46,7 +46,7 @@ a:hover{
     position: absolute;
     z-index: 10;
     list-style-type: none;
-    border: 1px solid black;
+    border: 0.5px solid white;
     border-radius: 10px;
     margin: 10px;
     padding: 10px;
@@ -84,13 +84,13 @@ a:hover{
     font-weight: 500;
     padding: 10px 5px;
     margin: 0 5px;
-    width: 100px;
-    height: 50px;
-    border: 1px solid black;
+    width: 120px;
+    height: 40px;
+    border: 0.5px solid black;
     border-radius: 15px;
     cursor: pointer;
-    border: none;
     color: hsl(0, 0%, 41%);
+    background-color: hsl(0, 0%, 98%);
   }
 
   button:hover{
@@ -99,27 +99,8 @@ a:hover{
   }
   .sign-btn button:nth-child(1) {
     border: none;
-    background: hsl(0, 0%, 98%);
+    background: hsl(0, 1%, 95%);;
   }
 
-  @media screen and (max-with: 400px ) {
-    .dropdown-menu {
-    position: absolute;
-    z-index: 1;
-    list-style-type: none;
-    border-radius: 10px;
-    margin: 5px;
-    padding: 5px;
-    width: 10px;
-    background-color: hsl(0, 0%, 98%);
-    }
-
-    .dropdown-menu li img {
-      margin-right: 10px;
-  }
-  .dropdown-menu img {
-  width: 4px;
-  height: 4px;
-}
-  }
+ 
 
