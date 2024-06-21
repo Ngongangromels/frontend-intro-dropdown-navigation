@@ -1,0 +1,127 @@
+nav {
+    position: fixed;
+    width: 100%;
+    display: flex;
+    align-items: center;
+    padding: 15px 25px;
+    background: hsl(0, 0%, 98%);
+}
+
+.logo-nav img {
+    display: flex;
+    align-items: center;
+    justify-content: flex-start;
+    margin-right: 50px;
+
+}
+
+.nav-item {
+    margin: 0 20px;
+    font-size: 16px;
+    font-weight: 500;
+    color: hsl(0, 0%, 41%);
+    position: relative;
+    list-style-type: none;
+}
+
+.nav-item img {
+    
+}
+
+.nav-item a{
+    text-decoration: none;
+    color:hsl(0, 0%, 41%);;
+}
+
+.links-items{
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+}
+
+a:hover{
+    color: hsl(0, 0%, 8%);
+    font-weight: bold;
+  }
+
+  .dropdown-menu {
+    position: absolute;
+    z-index: 10;
+    list-style-type: none;
+    border: 1px solid black;
+    border-radius: 10px;
+    margin: 10px;
+    padding: 10px;
+    width: 150px;
+    background-color: hsl(0, 0%, 98%);
+  }
+
+  .dropdown-menu li {
+    display: flex;
+    flex-direction: row;
+    padding: 10px 5px;
+}
+
+.dropdown-menu li img {
+    margin-right: 10px;
+}
+
+.icon-nav {
+  position: fixed;
+  margin-left: 5px ;
+  padding-top: 7px;
+}
+
+
+  .sign-btn{
+    width: 70%;
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: flex-end;
+  }
+
+  .sign-btn button {
+    font-size: 16px;
+    font-weight: 500;
+    padding: 10px 5px;
+    margin: 0 5px;
+    width: 100px;
+    height: 50px;
+    border: 1px solid black;
+    border-radius: 15px;
+    cursor: pointer;
+    border: none;
+    color: hsl(0, 0%, 41%);
+  }
+
+  button:hover{
+    color: hsl(0, 0%, 8%);
+    font-weight: bold;
+  }
+  .sign-btn button:nth-child(1) {
+    border: none;
+    background: hsl(0, 0%, 98%);
+  }
+
+  @media screen and (max-with: 400px ) {
+    .dropdown-menu {
+    position: absolute;
+    z-index: 1;
+    list-style-type: none;
+    border-radius: 10px;
+    margin: 5px;
+    padding: 5px;
+    width: 10px;
+    background-color: hsl(0, 0%, 98%);
+    }
+
+    .dropdown-menu li img {
+      margin-right: 10px;
+  }
+  .dropdown-menu img {
+  width: 4px;
+  height: 4px;
+}
+  }
+

@@ -10,7 +10,7 @@ export async  function getBodyPageBy(): Promise<TBodyPage> {
         title: 'Make remote work',
         text: ' Get your team in sync, no matter your location. Streamline processes,  create team rituals, and watch productivity soar.',
         button: 'Learn more',
-        logo: [clientAudiophile, clientData, clientMaker, clientMeet],
+        logo: [clientData, clientAudiophile,  clientMeet,  clientMaker],
         image: imageHero,
        
     }

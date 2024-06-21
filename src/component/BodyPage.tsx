@@ -16,7 +16,7 @@ export const BodyPage: React.FC<Props> = ({mainBloc }) => {
                     <button className='btn-page'><a href="/"><strong>{mainBloc?.button}</strong></a></button>
                     <ul className='logo-page'>
                         {mainBloc?.logo.map((logo, index) =>(
-                            <li key={index}><img src={logo} alt="" /></li>
+                            <li key={index}><img className='logo-size' src={logo} alt="" /></li>
                         ))}
                     </ul>
             </div>

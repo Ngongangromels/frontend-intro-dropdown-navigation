@@ -5,6 +5,7 @@ import iconReminders from "../images/iconReminders.svg";
 import iconPlanning from "../images/iconPlanning.svg";
 import logo from "../images/logo.svg";
 import { NavBarMenuItem } from "./NavBarMenuItem";
+import './NavBar.css'
 
 export interface TNavbarItem {
   href: string;
@@ -66,27 +67,28 @@ const NAV_BAR_ITEMS: TNavbarItem[] = [
     href: "#about",
     label: "About",
   },
-  {
-    href: '#Login',
-    label: 'Login',
-  },
-  {
-    href: '#Register',
-    label: 'Register',
-  }
 ];
 
 function NavBarre() {
+  
+  
   return (
     <nav className="navbar">
-      <div>
+      <div className="logo-nav">
         <img src={logo} alt="" />
       </div>
-      <ul className="nav-items">
-        {NAV_BAR_ITEMS.map((item, idx) => (
-          <NavBarMenuItem key={idx} menu={item} />
-        ))}
-      </ul>
+      <div className="links-container">
+        <ul className="links-items">
+          {NAV_BAR_ITEMS.map((item, idx) => (
+            <NavBarMenuItem key={idx} menu={item} />
+          ))}
+        </ul>
+      </div>
+      
+      <div className="sign-btn">
+          <button>Login</button>
+          <button>Register</button>
+      </div>
     </nav>
   );
 }
