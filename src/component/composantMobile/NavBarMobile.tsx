@@ -1,14 +1,14 @@
 import React, { useState } from 'react'
 import './NavBarMobile.css'
-import logo from '../images/logo.svg'
-import iconCloseMenu from '../images/iconCloseMenu.svg'
-import iconMenu from '../images/iconMenu.svg'
-import iconTodo from "../images/iconTodo.svg";
-import iconCalender from "../images/iconCalendar.svg";
-import iconReminders from "../images/iconReminders.svg";
-import iconPlanning from "../images/iconPlanning.svg";
-import { TNavbarItem } from './NavBar'
-import { NavBarMenuItem } from './NavBarMenuItem'
+import logo from '../../images/logo.svg'
+import iconCloseMenu from '../../images/iconCloseMenu.svg'
+import iconMenu from '../../images/iconMenu.svg'
+import iconTodo from "../../images/iconTodo.svg";
+import iconCalender from "../../images/iconCalendar.svg";
+import iconReminders from "../../images/iconReminders.svg";
+import iconPlanning from "../../images/iconPlanning.svg";
+import { TNavbarItem } from '../NavBar'
+import { NavBarMenuItemMobile } from './NavBarMenuIdemMobile'
 
 const NAV_BAR_ITEMS: TNavbarItem[] = [
     {
@@ -74,13 +74,13 @@ function NavBarMobile() {
         <nav className='nav-bar-mobile'>
             <ul>
                 <li><img src={logo} alt="" /></li>
-                <li className='btn-toggle-mobile' onClick={handelToggleMenu}>{showMenu ? (<img src={iconCloseMenu} alt="" />) : (<img src={iconMenu} alt="" />)}</li>
+                <li className='btn-toggle-mobile' onClick={handelToggleMenu}>{showMenu ? (<img className='icon-toggle' src={iconCloseMenu} alt="" />) : (<img className='icon-toggle' src={iconMenu} alt="" />)}</li>
                 {showMenu && 
                 <div className='links-mobile-container'>
                    <ul className="links-items-mobile">
                         <li>
                             {NAV_BAR_ITEMS.map((item, idx) => (
-                                    <NavBarMenuItem  key={idx} menu={item} />
+                                    <NavBarMenuItemMobile key={idx} menu={item}/>
                                 ))}
                         </li> 
                     </ul>

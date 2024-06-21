@@ -6,8 +6,8 @@ import { TBodyPage } from './typeComponent';
 import { getBodyPageBy } from './server'
 import NavBarre from './component/NavBar';
 import { useMediaQuery } from 'react-responsive';
-import NavBarMobile from './component/NavBarMobile';
-import { BodyPageMobile } from './component/bodyPageMobile';
+import NavBarMobile from './component/composantMobile/NavBarMobile';
+import { BodyPageMobile } from './component/composantMobile/bodyPageMobile';
 
 function App() {
   const [mainBloc, setMainBloc] = useState<TBodyPage | null>(null)
@@ -25,7 +25,7 @@ function App() {
     }) ()
   }, [])
   return (
-    <div className=""> 
+    <div className="App"> 
         {isDesktopOrMobile ? (<div>
           <NavBarMobile/>
           <BodyPageMobile mainBloc={mainBloc!}  />

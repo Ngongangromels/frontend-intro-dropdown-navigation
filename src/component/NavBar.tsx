@@ -1,4 +1,4 @@
-import React, { useState } from "react";
+import React from "react";
 import iconTodo from "../images/iconTodo.svg";
 import iconCalender from "../images/iconCalendar.svg";
 import iconReminders from "../images/iconReminders.svg";
@@ -69,7 +69,7 @@ const NAV_BAR_ITEMS: TNavbarItem[] = [
   },
 ];
 
-function NavBarre() {
+function NavBar() {
   
   
   return (
@@ -93,4 +93,4 @@ function NavBarre() {
   );
 }
 
-export default NavBarre;
+export default NavBar;

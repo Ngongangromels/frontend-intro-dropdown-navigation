@@ -1,7 +1,6 @@
-import React from 'react'
-import './BodyPage.css'
-import { TBodyPage } from '../typeComponent'
-import imageHeroMobile from '../images/imageHeroMobile.png'
+import '../BodyPage.css'
+import { TBodyPage } from '../../typeComponent'
+import imageHeroMobile from '../../images/imageHeroMobile.png'
 import './BodyPageMobile.css'
 
 interface Props {

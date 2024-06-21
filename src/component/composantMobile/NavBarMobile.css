@@ -19,12 +19,17 @@
     width: 45px;
 }
 
+.btn-toggle-mobile img{
+    height: 20px;
+    width: 25px;
+} 
+
 .links-mobile-container{
     position: fixed;
     display: block;
     flex-direction: column;
     justify-content: flex-end;
-    padding-top: 50px;
+    padding-top: 15px;
     margin:  40px 200px;
     height: 100%;
     width: 365px;
@@ -32,8 +37,9 @@
 } 
 
 .links-items-mobile li {
-    padding: 10px 5px;
-    margin: 10px 1px;
+    padding: 5px 5px;
+    margin-top: 15px;
+    margin-right: 35px;
 }
 
 .sign-btn-mobile{
@@ -48,8 +54,8 @@
     font-weight: 500;
     padding: 10px 5px;
     margin: 0 5px;
-    width: 140px;
-    height: 50px;
+    width: 150px;
+    height: 35px;
     border: 1px solid black;
     border-radius: 15px;
     cursor: pointer;
@@ -62,21 +68,3 @@
     background: hsl(0, 0%, 98%);
   }
 
-  .dropdown-menu-mobile {
-    position: absolute;
-    z-index: 1;
-    list-style-type: none;
-    border: none;
-    margin: 5px;
-    padding: 5px;
-    width: 120px;
-    background-color: hsl(0, 0%, 98%);
-    }
-
-    .dropdown-menu-mobile li img {
-      margin-right: 10px;
-  }
-  .dropdown-menu-mobile img {
-  width: 10px;
-  height: 10px;
-}

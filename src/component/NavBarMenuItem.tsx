@@ -24,13 +24,13 @@ export const NavBarMenuItem: FC<Props> = ({ menu }) => {
   return (
     <ul className="nav-item">
 
-      <li className="element-line"><a href={menu.href} onMouseEnter={handleMouseEnter} onMouseLeave={handleMouseLeave}>{menu.label}</a>{hasChildren && (dropdownOpen ? (<img className="icon-nav" src={iconArrowUp} alt="" />) : (<img className="icon-nav" src={iconArrowDown} alt="" />))}</li>
+      <li className="element-line"><a href={menu.href} onMouseEnter={handleMouseEnter} onMouseLeave={handleMouseLeave}>{menu.label}</a>{hasChildren && (dropdownOpen ? (<img  src={iconArrowUp} alt="" />) : (<img  src={iconArrowDown} alt="" />))}</li>
       {dropdownOpen &&
         hasChildren &&   
         <li className="dropdown-menu">
           {
              menu.children?.map((child, idx) => (
-              <li key={idx}> <img src={child.icon} alt="" /><a href={child.href}> <span>{child.label}</span></a></li>
+              <li key={idx}> <img src={child.icon} alt='' /><a href={child.href}> <span>{child.label}</span></a></li>
         ))}
         </li>
        }
