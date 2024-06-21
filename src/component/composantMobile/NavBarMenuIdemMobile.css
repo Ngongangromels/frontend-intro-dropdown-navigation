@@ -17,11 +17,13 @@
 
 .dropdown-menu-mobile {
   position: relative;
-  top: 20px;
+  top: 23px;
   left: -40%;
     list-style-type: none;
     width: 150px;
     background-color: hsl(0, 0%, 98%);
+    border: 1px solid white;
+    border-radius: 15px;
   }
 
   .dropdown-menu-mobile li {

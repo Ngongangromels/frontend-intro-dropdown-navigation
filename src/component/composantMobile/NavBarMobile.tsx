@@ -70,6 +70,7 @@ function NavBarMobile() {
     const handelToggleMenu = () => {
         setShowMenu(!showMenu)
     }
+  
     return (
         <nav className='nav-bar-mobile'>
             <ul>

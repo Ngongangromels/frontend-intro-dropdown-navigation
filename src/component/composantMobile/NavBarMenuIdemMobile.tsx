@@ -9,11 +9,21 @@ interface Props {
 }
 
 export const NavBarMenuItemMobile: FC<Props> = ({ menu }) => {
+   const [close, setClose] = useState<boolean>(false);
+
+   const handleClose = () => {
+     setClose(!close);
+   };
   const [dropdownOpen, setDropdownOpen] = useState(false);
 
-  const handleShowMenu = () => {
-    setDropdownOpen(!dropdownOpen);
+  const handleMouseEnter = () => {
+    setDropdownOpen(true);
   };
+
+  const handleMouseLeave = () => {
+    setDropdownOpen(false);
+  };
+
 
 
   const hasChildren = menu.children && menu.children.length > 0;
@@ -22,7 +32,7 @@ export const NavBarMenuItemMobile: FC<Props> = ({ menu }) => {
   return (
     <ul className="nav-item-mobile">
 
-      <li className="element-line"><a href={menu.href} onClick={handleShowMenu}>{menu.label}</a>{hasChildren && (dropdownOpen ? (<img className="icon-nav-mobile" src={iconArrowUp} alt="" />) : (<img className="icon-nav-mobile" src={iconArrowDown} alt="" />))}</li>
+      <li className="element-line" onClick={handleClose}><a href={menu.href}   onMouseEnter={handleMouseEnter} onMouseLeave={handleMouseLeave}>{menu.label}</a>{hasChildren && (dropdownOpen ? (<img className="icon-nav-mobile" src={iconArrowDown} alt="" />) : (<img className="icon-nav-mobile" src={iconArrowUp} alt="" />))}</li>
       {dropdownOpen &&
         hasChildren &&   
         <li className="dropdown-menu-mobile">

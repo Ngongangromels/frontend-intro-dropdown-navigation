@@ -35,9 +35,9 @@ a:hover{
     flex-direction: column;
     justify-content: flex-end;
     padding-top: 15px;
-    margin:  40px 200px;
+    margin:  40px 120px;
     height: 100%;
-    width: 365px;
+    width: 375px;
     background-color: hsl(0, 0%, 95%);
 } 
 
